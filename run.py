@@ -4,8 +4,6 @@ import unittest
 from interface.Dtt_case import Ddt_case
 from public import gene_report
 
-
-
 def main():
     suite = unittest.TestSuite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(Ddt_case))

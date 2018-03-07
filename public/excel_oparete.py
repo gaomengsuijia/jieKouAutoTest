@@ -28,7 +28,7 @@ class excel_oparete(object):
         #获取工作表
         st = wb["Sheet1"]
         for each_row in st.rows:
-            id.append(each_row[1].value)
+            id.append(each_row[0].value)
             paras.append(each_row[2].value)
             url.append(each_row[3].value)
             method.append(each_row[4].value)

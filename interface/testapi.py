@@ -1,8 +1,7 @@
 #coding:utf-8
 __author__ = "langtuteng"
 from public import jiekou_request
-
-
+from public.gene_log import prinwrap,printlog
 
 class TestApi(object):
     '''
@@ -37,6 +36,7 @@ class TestApi(object):
 
         :return:
         '''
+        printlog.info("开始调用接口测试用例id-{}".format(self.id))
         data = self.gene_para_dict()
         print(data)
         if self.method == "POST":
@@ -48,13 +48,14 @@ class TestApi(object):
 
         return test
 
-
-
+    @prinwrap("接口发送请求")
     def getresult(self):
         '''
         获取接口的实际返回值
         :return:
         '''
-        return self.testapi()
+        result = self.testapi()
+        printlog.info("接口返回数据：{}".format(result))
+        return result
 
 

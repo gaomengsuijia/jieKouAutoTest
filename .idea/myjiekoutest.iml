@@ -5,5 +5,7 @@
     <orderEntry type="jdk" jdkName="Python 3.6.3 (C:\Users\Administrator\AppData\Local\Programs\Python\Python36\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="test" />
+    <orderEntry type="module" module-name="course" />
+    <orderEntry type="module" module-name="jiekou-python3-master" />
   </component>
 </module>

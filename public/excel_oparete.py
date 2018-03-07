@@ -1,6 +1,7 @@
 #coding:utf-8
 __author__ = "langtuteng"
 import openpyxl
+from public.gene_log import prinwrap,printlog
 import os
 BASE_DIR= os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -36,7 +37,7 @@ class excel_oparete(object):
             result.append(each_row[6].value)
         return id,paras,url,method,hope,result
 
-
+@prinwrap("开始解析测试用例")
 def makedata(path):
     '''
     数据封装成每一条用例

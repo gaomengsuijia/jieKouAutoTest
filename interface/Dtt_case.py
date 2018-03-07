@@ -23,7 +23,7 @@ class Ddt_case(unittest.TestCase):
         result = tapi.getresult()
         hope_result = assertcode(res["hope"])
         self.assertEqual(hope_result,result,msg="预期结果与实际不相符")
-        print(result)
+        # print(result)
 
 
 

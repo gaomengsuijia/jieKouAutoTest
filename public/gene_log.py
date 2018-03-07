@@ -24,7 +24,7 @@ def prinwrap(para):
     def wraper(func):
         @wraps(func)
         def _wraper(*args,**kwargs):
-            printlog.debug('当前模块名称--{}'.format(para))
+            printlog.debug('当前执行步骤--{}'.format(para))
             fun = func(*args,**kwargs)
             return fun
         return _wraper

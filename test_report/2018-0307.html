@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>接口测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-03-07 14:42:42</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.672039</p>
-<p class='attribute'><strong>Status:</strong> Pass 3</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-03-07 16:17:52</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.779044</p>
+<p class='attribute'><strong>Status:</strong> Failure 3</p>
 
 <p class='description'>接口测试</p>
 </div>
@@ -221,31 +221,43 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>interface.Dtt_case.Ddt_case</td>
     <td>3</td>
-    <td>3</td>
     <td>0</td>
+    <td>3</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_ddt_1</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_ddt_1</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        fail</a>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: 
+ft1.1: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python_project\jieKouAutoTest\interface\Dtt_case.py", line 25, in test_ddt
+    self.assertEqual(hope_result,result,msg="预期结果与实际不相符")
+AssertionError: {'code': '0'} != '{"code":-999,"descs":"用户帐号不存在，请注册."}' : 预期结果与实际不相符
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python_project\jieKouAutoTest\interface\Dtt_case.py", line 25, in test_ddt
+    self.assertEqual(hope_result,result,msg="预期结果与实际不相符")
+AssertionError: {'code': '0'} != '{"code":-999,"descs":"用户帐号不存在，请注册."}' : 预期结果与实际不相符
+
 
         </pre>
     </div>
@@ -254,22 +266,34 @@ pt1.1:
     </td>
 </tr>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_ddt_2</div></td>
+<tr id='ft1.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_ddt_2</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        fail</a>
 
-    <div id='div_pt1.2' class="popup_window">
+    <div id='div_ft1.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.2: 
+ft1.2: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python_project\jieKouAutoTest\interface\Dtt_case.py", line 25, in test_ddt
+    self.assertEqual(hope_result,result,msg="预期结果与实际不相符")
+AssertionError: {'code': '0'} != '' : 预期结果与实际不相符
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python_project\jieKouAutoTest\interface\Dtt_case.py", line 25, in test_ddt
+    self.assertEqual(hope_result,result,msg="预期结果与实际不相符")
+AssertionError: {'code': '0'} != '' : 预期结果与实际不相符
+
 
         </pre>
     </div>
@@ -278,22 +302,34 @@ pt1.2:
     </td>
 </tr>
 
-<tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_ddt_3</div></td>
+<tr id='ft1.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_ddt_3</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        fail</a>
 
-    <div id='div_pt1.3' class="popup_window">
+    <div id='div_ft1.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.3: 
+ft1.3: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python_project\jieKouAutoTest\interface\Dtt_case.py", line 25, in test_ddt
+    self.assertEqual(hope_result,result,msg="预期结果与实际不相符")
+AssertionError: {'code': '0'} != '{"code":0,"descs":"修改成功","timestamp":1520410670165}' : 预期结果与实际不相符
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\python_project\jieKouAutoTest\interface\Dtt_case.py", line 25, in test_ddt
+    self.assertEqual(hope_result,result,msg="预期结果与实际不相符")
+AssertionError: {'code': '0'} != '{"code":0,"descs":"修改成功","timestamp":1520410670165}' : 预期结果与实际不相符
+
 
         </pre>
     </div>
@@ -305,8 +341,8 @@ pt1.3:
 <tr id='total_row'>
     <td>Total</td>
     <td>3</td>
-    <td>3</td>
     <td>0</td>
+    <td>3</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>
